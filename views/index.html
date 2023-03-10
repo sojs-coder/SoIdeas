@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SoIdeas</title>
+  <link href="https://replitcss.hecker40.repl.co/replit.css" rel="stylesheet" type="text/css" />
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRFTEYCCSS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QRFTEYCCSS');
+</script>
+
+</head>
+
+<body>
+   <nav class = "navbar">
+    <a href = "//sojs-space.sojs.repl.co" class = "logo"><img src = "/android-icon-36x36.png"></a>
+    <ul class = "nav-links">
+      <input type="checkbox" id="checkbox_toggle"/>
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <div class = "menu">
+        <li><a href = "/" class = "link-accent" style = "color:var(--accent-primary-default)">SoIdeas</a></li>
+        <li><a href = "/all" >View All Ideas</a></li>
+         <li><a href = "//sojs-space.sojs.repl.co">SoJS Space</a></li>
+        <li><a href = "javascript:void(0)" class = "btn newIdea">New Challenge</a></li>
+      </div>
+      
+    </ul>
+  </nav>
+  <section class = "container">
+    <h1 class = "text-glow">Make Something Great</h1>
+    <p>Difficulty:<br> <input id = "diff" type = "range" min = "0" max = "100"></p>
+    <button class="btn btn-primary item-glow newIdea">Get Inspired</button>
+    <div class="card-container"></div>
+  </section>
+  <script src="script.js"></script>
+  
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
